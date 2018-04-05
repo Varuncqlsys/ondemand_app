@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_dp10"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/degree"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="@dimen/margin_dp6"
+        android:layout_weight="0.7"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/go_on_duty"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/specialization"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="@dimen/margin_dp6"
+        android:layout_weight="1.6"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/go_on_duty"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="@dimen/margin_dp5"
+        android:layout_weight="0.7"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/go_on_duty"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end|center_vertical"
+        android:layout_marginLeft="@dimen/margin_dp2"
+        android:padding="@dimen/padding_dp6"
+        android:src="@drawable/edit_seller" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end|center_vertical"
+        android:padding="@dimen/padding_dp6"
+        android:src="@drawable/cross" />
+</LinearLayout>

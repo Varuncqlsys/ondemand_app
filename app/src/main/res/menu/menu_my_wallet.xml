@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_account_seller"
+        android:icon="@drawable/bank_icon_seller"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/add_account_buyer"
+        android:icon="@drawable/back_icon_buyer"
+        android:title=""
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

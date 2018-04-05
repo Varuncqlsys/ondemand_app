@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:centerColor="@color/recycle_row_bg"
+        android:endColor="@color/recycle_row_bg"
+        android:startColor="@color/recycle_row_bg" />
+    <corners android:radius="5dp" />
+
+</shape>

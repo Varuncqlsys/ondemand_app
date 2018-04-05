@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        >
+
+
+        <ImageView
+            android:id="@+id/select_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_marginBottom="@dimen/margin_dp10"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_dp5"
+            android:background="@color/colorWhite"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/cancel_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_dp10"
+                android:background="@drawable/sort_bgd_seller_drawable"
+                android:gravity="center"
+                android:padding="@dimen/padding_dp10"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/send_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:background="@drawable/sort_bgd_seller_drawable"
+                android:gravity="center"
+                android:padding="@dimen/padding_dp10"
+                android:text="Send"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

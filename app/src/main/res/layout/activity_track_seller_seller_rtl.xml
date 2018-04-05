@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_track_seller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omorni.activity.TrackSellerActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/padding_dp10">
+
+        <LinearLayout
+            android:id="@+id/distance_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_dp3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock_blue" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_dp10"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/arrived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_dp7"
+            android:text=""
+            android:textColor="@color/colorPrimarySeller"
+            android:textSize="@dimen/textsize_sp17" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrived"
+            android:layout_marginTop="@dimen/margin_dp10"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/track_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp5"
+                android:layout_weight="1"
+                android:background="@drawable/sort_bgd_seller"
+                android:gravity="center">
+
+                <com.omorni.custom_views.Normal_Text_View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/margin_dp5"
+                    android:drawableRight="@drawable/track_icon"
+                    android:gravity="center"
+                    android:text="@string/track_work"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_dp5"
+                android:layout_weight="1"
+                android:background="@drawable/sort_bgd_seller"
+                android:gravity="center">
+
+                <com.omorni.custom_views.Normal_Text_View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/margin_dp10"
+                    android:drawableRight="@drawable/chat"
+                    android:gravity="center"
+                    android:text="@string/chat"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

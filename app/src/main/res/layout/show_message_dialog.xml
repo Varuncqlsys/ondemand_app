@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_dp10"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:background="@drawable/dialog_bg"
+        android:padding="@dimen/padding_dp7">
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/notify_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=" lkdek del deld eld eld eld eld eld el m;dm; dekmdl;"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notify_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_dp10"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:background="@drawable/sort_bg_drawable"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp17" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

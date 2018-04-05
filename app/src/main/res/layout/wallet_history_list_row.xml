@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_selector_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_dp12">
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true">
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/transac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:text="@string/transaction_id"
+                android:textColor="@color/text_gray_color"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/transac_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transac"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="@dimen/margin_dp8"
+                android:text="P51554842311525153"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transac_id"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="@dimen/margin_dp8"
+                android:text="Completed"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/textsize_sp16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:text="350 SAR"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/amount"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="@dimen/margin_dp8"
+                android:text="23-june-2017"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/date"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="@dimen/margin_dp8"
+                android:text="12:04 Am"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp15" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_dp10"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:background="@color/recycle_text_color" />
+
+
+</LinearLayout>

@@ -1,0 +1,272 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_seller"
+    tools:context="com.omorni.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/man_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg4"
+            android:orientation="vertical"
+            android:weightSum="3.1">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:layout_weight="2.1"
+                android:src="@drawable/home_man" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:id="@+id/plumber_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_dp2"
+                            android:layout_marginRight="@dimen/margin_dp2"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/icon_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon1" />
+
+                            <com.omorni.custom_views.Normal_Text_View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_one"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/margin_dp3"
+                                android:text="@string/plumber"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/textsize_sp12" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorViewSeller" />
+
+                        <RelativeLayout
+                            android:id="@+id/electrician_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_dp2"
+                            android:layout_marginRight="@dimen/margin_dp2"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/icon_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon2" />
+
+                            <com.omorni.custom_views.Normal_Text_View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_two"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/margin_dp3"
+                                android:text="@string/electrician"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/textsize_sp12" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorViewSeller" />
+
+                        <RelativeLayout
+                            android:id="@+id/carpenter_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_dp2"
+                            android:layout_marginRight="@dimen/margin_dp2"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/icon_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon3" />
+
+                            <com.omorni.custom_views.Normal_Text_View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_three"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/margin_dp3"
+                                android:text="@string/carpenter"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/textsize_sp12" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/bottom_layout"
+                    android:background="@color/colorViewSeller" />
+
+                <RelativeLayout
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:id="@+id/ac_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_dp2"
+                            android:layout_marginRight="@dimen/margin_dp2"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/icon_four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon4" />
+
+                            <com.omorni.custom_views.Normal_Text_View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_four"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/margin_dp3"
+                                android:text="@string/ac"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/textsize_sp12" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorViewSeller" />
+
+                        <RelativeLayout
+                            android:id="@+id/satellite_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_dp2"
+                            android:layout_marginRight="@dimen/margin_dp2"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/icon_five"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon5" />
+
+                            <com.omorni.custom_views.Normal_Text_View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_five"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/margin_dp3"
+                                android:text="@string/satellite"
+                                android:gravity="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/textsize_sp12" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorViewSeller" />
+
+                        <RelativeLayout
+                            android:id="@+id/painter_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_dp2"
+                            android:layout_marginRight="@dimen/margin_dp2"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/icon_six"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon6" />
+
+                            <com.omorni.custom_views.Normal_Text_View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_six"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/margin_dp3"
+                                android:text="@string/painter"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/textsize_sp12" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

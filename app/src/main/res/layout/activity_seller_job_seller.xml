@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.omorni.activity.TrackWorkActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_seller" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/job_started"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_dp50"
+        android:text="@string/job_completed"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp18" />
+
+    <ImageView
+        android:id="@+id/image_jobstarted"
+        android:layout_below="@id/job_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_dp30"
+        android:background="@drawable/job_working_seller" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/job_started_time"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/image_jobstarted"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_dp40"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp30" />
+
+    <ImageView
+        android:id="@+id/image_complete"
+        android:layout_below="@id/job_started_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_dp30"
+        android:background="@drawable/jobdone_seller" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/rate_seller"
+        android:layout_below="@id/image_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_seller"
+        android:textSize="@dimen/textsize_sp16"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:inputType="textCapSentences"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_dp30"
+        android:background="@drawable/place_order_seller_drawable" />
+
+</RelativeLayout>

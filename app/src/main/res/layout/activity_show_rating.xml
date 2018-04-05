@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omorni.activity.ShowRating">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:id="@+id/rating_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/margin_dp15"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/order_number_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/green_radius_bg"
+            android:paddingBottom="@dimen/padding_dp5"
+            android:paddingLeft="@dimen/padding_dp15"
+            android:paddingRight="@dimen/padding_dp15"
+            android:paddingTop="@dimen/padding_dp5"
+            android:text="@string/order"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_sp16"
+            android:textStyle="bold" />
+
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:text="@string/thanks_order_summery"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/textsize_sp16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_dp10"
+            android:orientation="horizontal">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/service_date_text_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:text="@string/service_date"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/order_date_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp15" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_dp10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/seller_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/seller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/seller_image"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:paddingLeft="@dimen/padding_dp10"
+                android:paddingTop="@dimen/padding_dp2"
+                android:text=""
+                android:textColor="@color/recycle_text_color"
+                android:textSize="@dimen/textsize_sp12" />
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/rating_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seller_name"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/seller_image"
+                android:numStars="5"
+                android:rating="4"
+                android:theme="@style/RatingBar" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating_rating"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/seller_image"
+                android:text=""
+                android:textColor="@color/gray_color_left_text"
+                android:textSize="@dimen/textsize_sp16" />
+        </RelativeLayout>
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:background="@drawable/sort_bg_drawable"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp16" />
+    </LinearLayout>
+
+</RelativeLayout>

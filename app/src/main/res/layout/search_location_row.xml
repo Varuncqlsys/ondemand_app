@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical">
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/search_location"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="@dimen/padding_dp7"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/padding_dp10"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="cmfdl;f"
+        android:textColor="@color/colorBlack" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"></View>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="year_array">
+        <item>Year</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>Month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="currency_array">
+        <item>Currency (optional)</item>
+        <item>Unspecified</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Carpenter</item>
+        <item>AC</item>
+        <item>Satellite</item>
+        <item>Painter</item>
+    </string-array>
+
+    <string-array name="photo_array">
+        <item>Camera</item>
+        <item>Choose from Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+
+
+    <string-array name="language_array">
+        <item>Arabic</item>
+        <item>English</item>
+        <item>Urdu</item>
+    </string-array>
+
+    <string-array name="package_array">
+        <item>Basic</item>
+        <item>Standard</item>
+        <item>Premium</item>
+    </string-array>
+
+    <string-array name="price_array">
+        <item>SAR 0 - 10</item>
+        <item>SAR 11 - 20</item>
+        <item>SAR 21 - 30</item>
+        <item>Above SAR 30</item>
+    </string-array>
+
+    <string-array name="language_level_array">
+        <item>Native</item>
+        <item>Basic</item>
+        <item>Fluent</item>
+    </string-array>
+
+    <string-array name="seller_level_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Pro</item>
+    </string-array>
+
+    <string-array name="repeat_array">
+        <item>No Repeat</item>
+        <item>Daily Repeat</item>
+        <item>Weekly Repeat</item>
+        <item>Monthly Repeat</item>
+        <item>Yearly Repeat</item>
+    </string-array>
+
+    <string-array name="alert_array">
+        <item>No alert</item>
+        <item>At time of event</item>
+        <item>5m before</item>
+        <item>15m before</item>
+        <item>30m before</item>
+        <item>1h before</item>
+        <item>2h before</item>
+        <item>1 day before</item>
+        <item>2 days before</item>
+        <item>1 week before</item>
+    </string-array>
+
+    <!--new array-->
+
+    <string-array name="degree_array">
+        <item>UG</item>
+        <item>PG</item>
+    </string-array>
+
+    <string-array name="exp_array">
+        <item> &lt; 2 years</item>
+        <item> 2-5 years</item>
+        <item>&gt; 5 years </item>
+    </string-array>
+
+    <string-array name="audio_array">
+        <item>Voice Recording</item>
+        <item>Choose from Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="order_status_array">
+        <item>Pending</item>
+        <item>Not Paid</item>
+        <item>Decline</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Paid</item>
+        <item>En Route</item>
+        <item>Finished</item>
+        <item>Canceled</item>
+        <item>Refunded</item>
+        <item>Not completed</item>
+        <item>On Hold</item>
+        <item>Refund Initiated</item>
+    </string-array>
+
+    <string-array name="order_type_array">
+        <item>Requested now</item>
+        <item>Scheduled</item>
+        <item>Post Job</item>
+    </string-array>
+</resources>

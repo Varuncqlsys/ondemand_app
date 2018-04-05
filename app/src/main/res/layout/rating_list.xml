@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_seller_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_dp10"
+    tools:context="com.omorni.activity.SellerDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/rating_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_dp5"
+            android:text="@string/rating"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rating_title"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="visible"></ListView>
+    </RelativeLayout>
+</RelativeLayout>

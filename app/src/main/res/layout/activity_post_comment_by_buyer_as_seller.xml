@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_comment_by_seller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.omorni.activity.PostCommentBySellerActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_seller" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_dp20">
+
+            <LinearLayout
+                android:id="@+id/post_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_dp15"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_dp5"
+                    android:paddingRight="@dimen/padding_dp15"
+                    android:text="@string/order"
+                    android:textColor="@color/colorPrimarySeller"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:textStyle="bold" />
+
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp6"
+                    android:text="@string/thanks_order_summery"
+                    android:textColor="@color/text_gray_color"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:textStyle="bold" />
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp5"
+                    android:text="@string/date"
+                    android:textColor="@color/colorPrimarySeller"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.omorni.custom_views.Bold_Text_View
+                        android:id="@+id/service_date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_seller_comment"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textsize_sp15" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_dp10"
+                        android:layout_marginRight="@dimen/margin_dp30"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:paddingBottom="5dp"
+                        android:stepSize="1.0" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_dp10"
+                    android:visibility="gone">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/seller_image_info"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <com.omorni.custom_views.Bold_Text_View
+                        android:id="@+id/seller_name_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_dp10"
+                        android:layout_toRightOf="@+id/seller_image_info"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textsize_sp16" />
+                </RelativeLayout>
+
+                <com.omorni.custom_views.Normal_EditText
+                    android:id="@+id/edit_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/margin_dp10"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="start"
+                    android:hint="@string/write_comment_here"
+                    android:padding="@dimen/padding_dp10" />
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/post_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_dp20"
+                    android:background="@drawable/sort_bgd_seller_drawable"
+                    android:gravity="center"
+                    android:text="@string/post_comment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_sp16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rating_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_dp15"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/order_number_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/blue_radius_bg"
+                    android:paddingBottom="@dimen/padding_dp5"
+                    android:paddingLeft="@dimen/padding_dp15"
+                    android:paddingRight="@dimen/padding_dp15"
+                    android:paddingTop="@dimen/padding_dp5"
+                    android:text="@string/order"
+                    android:textColor="@color/colorPrimarySeller"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:textStyle="bold" />
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/order_date_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_dp5"
+                    android:text="@string/date"
+                    android:textColor="@color/colorPrimarySeller"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:textStyle="bold" />
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp12"
+                    android:text="@string/thanks_order_summery"
+                    android:textColor="@color/text_gray_color"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp10">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/seller_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp" />
+
+                    <com.omorni.custom_views.Bold_Text_View
+                        android:id="@+id/seller_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_dp10"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/seller_image"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textsize_sp16" />
+
+                    <com.omorni.custom_views.Normal_Text_View
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/margin_dp10"
+                        android:paddingLeft="@dimen/padding_dp10"
+                        android:paddingTop="@dimen/padding_dp2"
+                        android:text=""
+                        android:textColor="@color/recycle_text_color"
+                        android:textSize="@dimen/textsize_sp12" />
+
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:id="@+id/rating_rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seller_name"
+                        android:layout_marginLeft="@dimen/margin_dp10"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/seller_image"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:theme="@style/RatingBar" />
+
+                    <com.omorni.custom_views.Bold_Text_View
+                        android:id="@+id/comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rating_rating"
+                        android:layout_marginLeft="@dimen/margin_dp10"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/seller_image"
+                        android:text=""
+                        android:textColor="@color/gray_color_left_text"
+                        android:textSize="@dimen/textsize_sp16" />
+                </RelativeLayout>
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_dp25"
+                    android:background="@drawable/sort_bgd_seller_drawable"
+                    android:gravity="center"
+                    android:text="@string/close"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_sp16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

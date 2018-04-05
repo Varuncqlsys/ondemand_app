@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/caldroid_light_red" />
+            <solid android:color="@color/light_gray" />
+        </shape>
+    </item>
+    <item>
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:gravity="bottom"
+            android:src="@drawable/small_dot_white"
+            android:tileMode="disabled"></bitmap>
+    </item>
+</layer-list>

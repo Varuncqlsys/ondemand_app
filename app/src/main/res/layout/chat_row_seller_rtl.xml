@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_dp5"
+    android:paddingLeft="@dimen/padding_dp8"
+    android:paddingRight="@dimen/padding_dp8"
+    android:paddingTop="@dimen/padding_dp5">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/right_layout"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/left_image"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:id="@+id/left_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/left_image">
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/left_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_dp10"
+                android:background="@drawable/gray_chat_rtl"
+                android:paddingBottom="@dimen/padding_dp5"
+                android:paddingLeft="@dimen/padding_dp5"
+                android:paddingRight="@dimen/padding_dp12"
+                android:paddingTop="@dimen/padding_dp5"
+                android:text="dewdeede"
+                android:textColor="@color/gray_color_left_text"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/left_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:text=""
+                android:textColor="@color/text_gray_color"
+                android:textSize="@dimen/textsize_sp12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imageleft_layout"
+            android:layout_width="190dp"
+            android:layout_height="165dp"
+            android:layout_marginRight="@dimen/margin_dp10"
+            android:layout_toLeftOf="@+id/left_image"
+            android:background="@drawable/rounded_gray_retangle"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/video_play_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding_dp10"
+                android:src="@drawable/video_play_video"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/left_image_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/margin_dp7"
+                android:text=""
+                android:textColor="@color/colorWhite_transparent"
+                android:textSize="@dimen/textsize_sp12" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/right_image"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true" />
+
+        <RelativeLayout
+            android:id="@+id/right_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/right_image">
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/right_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:background="@drawable/blue_chat_rtl"
+                android:padding="@dimen/padding_dp5"
+                android:text="esdeded"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/right_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/margin_dp20"
+                android:text="fdeddese"
+                android:textColor="@color/colorWhite_transparent"
+                android:textSize="@dimen/textsize_sp12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imageright_layout"
+            android:layout_width="190dp"
+            android:layout_height="165dp"
+            android:layout_marginLeft="@dimen/margin_dp10"
+            android:layout_toRightOf="@+id/right_image"
+            android:background="@drawable/rounded_green_retangle"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageright"
+                android:layout_width="182dp"
+                android:layout_height="157dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/video_play_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding_dp10"
+                android:src="@drawable/video_play_video"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/right_image_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/margin_dp7"
+                android:text=""
+                android:textColor="@color/colorWhite_transparent"
+                android:textSize="@dimen/textsize_sp12" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

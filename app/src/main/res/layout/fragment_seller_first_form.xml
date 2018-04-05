@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.omorni.fragment.SellerFirstFormFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:src="@drawable/steps1" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_dp10"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginTop="@dimen/margin_dp15"
+                android:text="@string/service_title"
+                android:textColor="@color/gray_color_left_text"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Normal_EditText
+                android:id="@+id/service_title"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:background="@drawable/search_bg_gray_radius"
+                android:gravity="center_vertical"
+                android:hint="@string/service_title_hint"
+                android:padding="@dimen/padding_dp10"
+                android:textColor="@color/gray_color_left_text"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/service_category"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:background="@drawable/search_bg_gray_radius"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="center_vertical"
+                android:hint="@string/select_category"
+                android:paddingLeft="@dimen/padding_dp10"
+                android:paddingRight="@dimen/margin_dp10"
+                android:textColor="@color/gray_color_left_text"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_dp25"
+                android:background="@color/divider_gray"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:gravity="center_vertical">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/skills"
+                    android:textSize="@dimen/textsize_sp16" />
+
+                <ImageView
+                    android:id="@+id/add_skills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/padding_dp5"
+                    android:src="@drawable/add_plus" />
+            </RelativeLayout>
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/selected_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:hint="@string/electrician_placeholder"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_dp15"
+                android:background="@color/divider_gray"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:layout_marginTop="@dimen/margin_dp10">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/education"
+                    android:textSize="@dimen/textsize_sp16" />
+
+                <ImageView
+                    android:id="@+id/add_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/padding_dp5"
+                    android:src="@drawable/add_plus" />
+            </RelativeLayout>
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/selected_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+
+                android:hint="@string/education_placeholder"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_dp15"
+                android:background="@color/divider_gray"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:layout_marginTop="@dimen/margin_dp10">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/languages"
+                    android:textSize="@dimen/textsize_sp16" />
+
+                <ImageView
+                    android:id="@+id/add_languages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/padding_dp5"
+                    android:src="@drawable/add_plus" />
+            </RelativeLayout>
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/selected_languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp15"
+                android:layout_marginRight="@dimen/margin_dp15"
+                android:hint="@string/language_placeholder"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_dp15"
+                android:background="@color/divider_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp6"
+                android:layout_marginRight="@dimen/margin_dp6"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_dp3"
+                    android:layout_weight="1"
+                    android:background="@drawable/savecontinue"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_sp17" />
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:id="@+id/save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_dp3"
+                    android:layout_weight="1"
+                    android:background="@drawable/savecontinue"
+                    android:gravity="center"
+                    android:text="@string/save_continue"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_sp17" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

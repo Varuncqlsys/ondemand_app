@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.omorni.activity.CardListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_layout"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorWhite"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_dp10"
+        android:orientation="vertical">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/select_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_card"
+            android:background="@drawable/place_order_drawable"
+            android:gravity="center"
+            android:text="@string/select_card"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp18" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/add_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_dp10"
+            android:background="@drawable/place_order_drawable"
+            android:gravity="center"
+            android:text="@string/add_card"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp18" />
+    </LinearLayout>
+
+</RelativeLayout>

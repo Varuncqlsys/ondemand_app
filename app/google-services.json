@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "534855898237",
+    "firebase_url": "https://omorni-3626a.firebaseio.com",
+    "project_id": "omorni-3626a",
+    "storage_bucket": "omorni-3626a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534855898237:android:b0913878bb657eab",
+        "android_client_info": {
+          "package_name": "com.omorni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534855898237-3tfladb9lmdvtku3tecob2ahjivlgm69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omorni",
+            "certificate_hash": "b4c726e8b92f1c1e2029e2a7aaf31a7525d5b0b9"
+          }
+        },
+        {
+          "client_id": "534855898237-2fdu8sod9ph9jg7satc1s8d61ile8djd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDifktGichJ0uGOJpGo1XHHTzh7oAaiAfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534855898237-2fdu8sod9ph9jg7satc1s8d61ile8djd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

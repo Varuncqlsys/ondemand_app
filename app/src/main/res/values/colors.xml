@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#75AA51</color>
+    <color name="colorPrimaryDark">#75AA51</color>
+    <color name="colorAccent">#75AA51</color>
+    <color name="colorView">#90CA67</color>
+
+    <color name="startColorBuyer">#659C3F</color>
+    <color name="centerColorBuyer">#75B14B</color>
+    <color name="endColorBuyer">#7BB951</color>
+
+    <color name="colorGreen">#75AA51</color>
+    <color name="colorBack">#76B34D</color>
+    <color name="link_color">#0000EE</color>
+
+    <color name="colorPrimarySeller">#2c69a0</color>
+    <color name="colorPrimaryDarkSeller">#2c69a0</color>
+    <color name="colorAccentSeller">#2c69a0</color>
+    <color name="colorViewSeller">#3B7AB1</color>
+    <color name="splash_color">#048cd7</color>
+
+    <color name="startColor">#1C4F7B</color>
+    <color name="centerColor">#28659B</color>
+    <color name="endColor">#2A689F</color>
+
+    <color name="colorBlueTextDark">#24649D</color>
+    <color name="colorBlueTextLight">#2667A1</color>
+    <color name="tab_bg_color">#549ADA</color>
+
+    <color name="colorGrayMenu">#707070</color>
+    <color name="go_on_duty">#494949</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_transparent">#A6FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="header_bg">#F6F5F5</color>
+    <color name="divider">#F5F5F5</color>
+    <color name="recycle_divider">#E5D4B7</color>
+    <color name="bg_color">#FFF1D0</color>
+    <color name="text_gray_color">#726A5B</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="golden">#FFD700</color>
+    <color name="text_light_gray_color">#7C7C7F</color>
+    <color name="search_background">#E9E9E9</color>
+    <color name="alpha_white">#D9FFFFFF</color>
+    <color name="transparent_white">#8CFFFFFF</color>
+    <color name="transparent_black">#8C000000</color>
+    <color name="alpha_black">#80000000</color>
+    <color name="send_msg_bg">#E5E5E5</color>
+    <color name="search_bg_color">#E9E9E9</color>
+    <color name="jobdetail_bg_color">#F7F7F7</color>
+    <color name="gray_color_left_text">#636363</color>
+    <color name="green_text_ntify">#81B160</color>
+    <color name="red_error">#CC0000</color>
+
+    <color name="recycle_row_bg">#F3F3F3</color>
+    <color name="recycle_text_color">#949494</color>
+
+    <color name="divider_gray">#E2E2E2</color>
+    <color name="dialog_edit_gray">#EAEAEA</color>
+
+    <color name="light_text_color">#9C9C9C</color>
+
+</resources>

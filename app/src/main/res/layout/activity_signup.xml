@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgot_bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_dp60"
+                android:background="@drawable/logo_white" />
+
+            <RelativeLayout
+                android:id="@+id/firstname_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_button"
+                android:layout_alignRight="@+id/signup_button"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="@dimen/margin_dp40">
+
+                <ImageView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/name" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/firstname"
+                    android:orientation="vertical">
+
+                    <com.omorni.custom_views.Normal_EditText
+                        android:id="@+id/firstname_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/first_name"
+                        android:padding="@dimen/padding_dp10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:id="@+id/firstname_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lastname_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_button"
+                android:layout_alignRight="@+id/signup_button"
+                android:layout_below="@+id/firstname_layout"
+                android:layout_marginTop="@dimen/margin_dp10">
+
+                <ImageView
+                    android:id="@+id/last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/name" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/last"
+                    android:orientation="vertical">
+
+                    <com.omorni.custom_views.Normal_EditText
+                        android:id="@+id/last_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/last_name"
+                        android:padding="@dimen/padding_dp10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:id="@+id/last_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/email_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_button"
+                android:layout_alignRight="@+id/signup_button"
+                android:layout_below="@+id/lastname_layout"
+                android:layout_marginTop="@dimen/margin_dp10">
+
+                <ImageView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/email" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/email"
+                    android:orientation="vertical">
+
+                    <com.omorni.custom_views.Normal_EditText
+                        android:id="@+id/email_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/email"
+                        android:padding="@dimen/padding_dp10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:id="@+id/email_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mobile_layout"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_button"
+                android:layout_alignRight="@+id/signup_button"
+                android:layout_below="@+id/email_layout"
+                android:layout_marginTop="@dimen/margin_dp10">
+
+                <ImageView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mobile" />
+
+                <LinearLayout
+                    android:id="@+id/spinner_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_dp5"
+                    android:layout_marginTop="@dimen/margin_dp4"
+                    android:layout_toRightOf="@+id/mobile"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/country_code_text"
+                        android:layout_width="115dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_vertical"
+                        android:drawableRight="@drawable/down_arrow_white"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite" />
+
+                    <Spinner
+                        android:id="@+id/country_spinner"
+                        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                        android:layout_width="115dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone"></Spinner>
+
+                    <View
+                        android:id="@+id/mobile_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="@dimen/margin_dp5"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_dp10"
+                    android:layout_toRightOf="@+id/spinner_layout"
+                    android:orientation="vertical">
+
+                    <com.omorni.custom_views.Normal_EditText
+                        android:id="@+id/mobile_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/mobile_edit"
+                        android:inputType="phone"
+                        android:padding="@dimen/padding_dp10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:id="@+id/mobile_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/password_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_button"
+                android:layout_alignRight="@+id/signup_button"
+                android:layout_below="@+id/mobile_layout"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/pas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/password" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pas"
+                    android:orientation="vertical">
+
+                    <com.omorni.custom_views.Normal_EditText
+                        android:id="@+id/password_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/padding_dp10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:id="@+id/password_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/conf_password_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_button"
+                android:layout_alignRight="@+id/signup_button"
+                android:layout_below="@+id/password_layout"
+                android:layout_marginTop="@dimen/margin_dp10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/conf_pas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/password" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/conf_pas"
+                    android:orientation="vertical">
+
+                    <com.omorni.custom_views.Normal_EditText
+                        android:id="@+id/conf_password_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/padding_dp10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:id="@+id/conf_password_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.omorni.custom_views.Bold_Button_Font
+                android:id="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conf_password_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_dp35"
+                android:background="@drawable/signup_bg_drawable"
+                android:text="@string/signup"
+                android:textColor="@android:color/white" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/by_signing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_dp15"
+                android:gravity="center_horizontal"
+                android:visibility="visible"
+                android:text="@string/by_signing_up"
+                android:textColor="@android:color/white" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/by_signing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_dp12"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_dp3"
+                android:text="@string/terms_of"
+                android:textColor="@color/primary_color_drawable"
+                android:textSize="@dimen/textsize_sp17"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

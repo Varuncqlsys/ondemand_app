@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/toolbar"
+            >
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/edit_edu"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_dp5"
+                android:padding="@dimen/padding_dp10"
+                android:src="@drawable/cross_white" />
+        </RelativeLayout>
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp15"
+            android:text="@string/degree"
+            android:textColor="@color/gray_color_left_text"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/select_degree"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginRight="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:background="@drawable/search_bg_gray_radius"
+            android:drawableRight="@drawable/down_arrow"
+            android:gravity="center_vertical"
+            android:hint="@string/select_degree"
+            android:paddingLeft="@dimen/padding_dp10"
+            android:paddingRight="@dimen/margin_dp10"
+            android:textColor="@color/gray_color_left_text"
+            android:textSize="@dimen/textsize_sp15" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp15"
+            android:text="Type of course"
+            android:textColor="@color/gray_color_left_text"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <com.omorni.custom_views.Normal_EditText
+            android:id="@+id/type_course"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginRight="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:background="@drawable/search_bg_gray_radius"
+            android:gravity="center_vertical"
+            android:hint="@string/course_hint"
+            android:padding="@dimen/padding_dp10"
+            android:singleLine="true"
+            android:textColor="@color/gray_color_left_text"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/textsize_sp15" />
+
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp15"
+            android:text="@string/passing"
+            android:textColor="@color/gray_color_left_text"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/select_year"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginRight="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:background="@drawable/search_bg_gray_radius"
+            android:drawableRight="@drawable/down_arrow"
+            android:gravity="center_vertical"
+            android:hint="@string/select_year"
+            android:paddingLeft="@dimen/padding_dp10"
+            android:paddingRight="@dimen/margin_dp10"
+            android:textColor="@color/gray_color_left_text"
+            android:textSize="@dimen/textsize_sp15" />
+
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:background="@drawable/sort_bg_drawable"
+            android:gravity="center"
+            android:padding="@dimen/padding_dp10"
+            android:text="@string/save_edu"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp17" />
+    </LinearLayout>
+</RelativeLayout>

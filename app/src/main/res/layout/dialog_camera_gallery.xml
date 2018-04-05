@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_dp10"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black_text_clicked"
+            android:layout_marginLeft="@dimen/margin_dp10"
+            android:text="@string/camera" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_dp10"
+            android:layout_below="@+id/camera"
+            android:id="@+id/gallery"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginLeft="@dimen/margin_dp10"
+            android:textColor="@color/black_text_clicked"
+            android:text="@string/gallery" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omorni.activity.WithdrawActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_dp15"
+            android:text="@string/total_balance"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/total_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/toolbar"
+            android:padding="@dimen/padding_dp15"
+            android:text="efrde"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp16" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout"
+        android:background="@color/recycle_text_color"></View>
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="@dimen/margin_dp15"
+        android:layout_marginRight="@dimen/margin_dp15"
+        android:layout_marginTop="@dimen/margin_dp25"
+        android:text="@string/amount_minimum"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp15" />
+
+    <EditText
+        android:id="@+id/edt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/title"
+        android:layout_margin="@dimen/margin_dp10"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/sar"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_dp10" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_dp20"
+        android:background="@drawable/place_order_seller"
+        android:gravity="center"
+        android:text="@string/withdraw"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_sp17" />
+</RelativeLayout>

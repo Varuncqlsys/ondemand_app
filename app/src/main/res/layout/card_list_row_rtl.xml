@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_dp10"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:layout_marginTop="@dimen/margin_dp10"
+        android:background="@drawable/card_row_bg">
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_dp15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/credit_card" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_dp10"
+            android:layout_marginRight="@dimen/margin_dp15"
+            android:layout_toLeftOf="@+id/card_image"
+            android:orientation="vertical">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_dp1"
+                android:text="dwdeded"
+                android:textColor="@color/recycle_text_color"
+                android:textSize="@dimen/textsize_sp15" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow_card_flip"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/radio_selector_seller"
+                android:button="@null"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:padding="@dimen/padding_dp5"
+                android:src="@drawable/delete" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_dp20"
+            android:layout_marginTop="@dimen/margin_dp30"
+            android:gravity="center"
+            android:text="@string/dialog_text"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp" />
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp17"
+            android:layout_marginRight="@dimen/margin_dp10"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:text="@string/otp_code"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp16"
+            android:visibility="visible" />
+
+        <com.omorni.custom_views.Bold_EditText
+            android:id="@+id/otp_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp15"
+            android:layout_marginRight="@dimen/margin_dp15"
+            android:background="@android:color/white"
+            android:hint="@string/please_enter_otp"
+            android:inputType="number"
+            android:paddingBottom="@dimen/padding_dp10"
+            android:paddingTop="@dimen/padding_dp20"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_dp10"
+            android:layout_marginRight="@dimen/margin_dp10"
+            android:background="@color/light_text_color" />
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_dp15"
+            android:text="@string/resend_code"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_sp18" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_dp20"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:orientation="horizontal">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_dp5"
+                android:layout_marginRight="@dimen/margin_dp5"
+                android:background="@drawable/view_wallet_buyer_cancel"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@android:color/white" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/margin_dp5"
+                android:background="@drawable/view_wallet_buyer_cancel"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

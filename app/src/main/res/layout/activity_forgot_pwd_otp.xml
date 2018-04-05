@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgot_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_dp60"
+                android:background="@drawable/logo_white" />
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="@dimen/margin_dp40"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.omorni.custom_views.Bold_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/otp_screen_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_sp18" />
+
+                <com.omorni.custom_views.Normal_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp30"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/forgot_otp_screen_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_sp16" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/otp_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/submit_btn"
+                android:layout_alignRight="@+id/submit_btn"
+                android:layout_below="@+id/main_layout"
+                android:layout_marginTop="@dimen/margin_dp30">
+
+                <com.omorni.custom_views.Normal_EditText
+                    android:id="@+id/otp_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/your_otp"
+                    android:padding="@dimen/padding_dp10"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/textsize_sp16" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/otp_number"
+                    android:layout_marginLeft="@dimen/margin_dp10"
+                    android:layout_marginRight="@dimen/margin_dp10"
+                    android:background="@android:color/white" />
+
+            </RelativeLayout>
+
+            <com.omorni.custom_views.Bold_Button_Font
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otp_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_dp25"
+                android:background="@drawable/signup_bg_drawable"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_sp17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/submit_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:text="Right now use 1111 as OTP"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp18" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

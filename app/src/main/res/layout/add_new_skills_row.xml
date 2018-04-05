@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/add_new_skill"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_dp5"
+                android:padding="@dimen/padding_dp10"
+                android:src="@drawable/cross_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp5"
+            android:layout_marginRight="@dimen/margin_dp5"
+            android:layout_marginTop="@dimen/margin_dp10"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.omorni.custom_views.Normal_EditText
+                android:id="@+id/skills"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/margin_dp3"
+                android:layout_marginRight="@dimen/margin_dp3"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="center"
+                android:hint="@string/enter_skill"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/go_on_duty"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/level"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/margin_dp3"
+                android:layout_marginRight="@dimen/margin_dp3"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="center"
+                android:hint="@string/select_level"
+                android:paddingRight="@dimen/padding_dp5"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/go_on_duty"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <com.omorni.custom_views.Normal_Text_View
+                android:id="@+id/experience"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/margin_dp3"
+                android:layout_marginRight="@dimen/margin_dp3"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="center"
+                android:hint="@string/select_exp"
+                android:paddingRight="@dimen/padding_dp5"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/go_on_duty"
+                android:textSize="@dimen/textsize_sp15" />
+
+        </LinearLayout>
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/save_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_dp15"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:background="@drawable/sort_bg_drawable"
+            android:gravity="center"
+            android:padding="@dimen/padding_dp10"
+            android:text="@string/save_skill"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp17" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_dp5"
+        android:layout_marginRight="@dimen/margin_dp5"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/light_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_dp12"
+            android:text="@string/confirm_change"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp16" />
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_dp12"
+            android:text="@string/re_launch" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_dp5"
+            android:background="@color/light_text_color"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="2">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/text_gray_color"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_text_color">
+
+            </View>
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/re_launch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/re_launch_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textsize_sp16" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

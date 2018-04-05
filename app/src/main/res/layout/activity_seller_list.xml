@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.omorni.activity.SellerListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/search_background"
+        android:padding="@dimen/padding_dp10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/search_bg_white">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:iconifiedByDefault="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/price_tax"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_dp12"
+        android:layout_marginRight="@dimen/margin_dp12"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp18"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/tax"
+        android:layout_marginTop="2dp"
+        android:visibility="visible">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:background="@color/search_background"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_dp12"
+        android:weightSum="2">
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/sort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp3"
+            android:layout_marginRight="@dimen/margin_dp3"
+            android:layout_weight="1"
+            android:background="@drawable/sort_bg_drawable"
+            android:gravity="center"
+            android:text="@string/sort"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp14" />
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/filter"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/margin_dp3"
+            android:layout_marginRight="@dimen/margin_dp3"
+            android:layout_weight="1"
+            android:background="@drawable/sort_bg_drawable"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp14" />
+    </LinearLayout>
+</RelativeLayout>

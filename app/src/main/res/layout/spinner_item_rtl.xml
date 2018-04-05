@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    android:gravity="center_vertical">
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_dp3"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_dp3"
+        android:layout_toLeftOf="@+id/fullname"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_dp5"
+        android:layout_toLeftOf="@+id/name"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+</RelativeLayout>

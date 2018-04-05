@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_dp4"
+        android:paddingRight="@dimen/padding_dp4"
+        android:paddingTop="@dimen/padding_dp5">
+
+        <com.omorni.custom_views.Normal_Text_View
+            android:id="@+id/duty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp4"
+            android:layout_marginRight="@dimen/margin_dp4"
+            android:layout_marginTop="@dimen/margin_dp5"
+            android:text="@string/go_on_duty"
+            android:textColor="@color/go_on_duty"
+            android:textSize="@dimen/textsize_sp18" />
+
+        <ToggleButton
+            android:id="@+id/switch_duty"
+            android:layout_width="55dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_dp5"
+            android:layout_marginRight="@dimen/margin_dp5"
+            android:background="@drawable/switch_bg"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="visible"
+            android:showText="false" />
+    </LinearLayout>
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/home_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/home"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17"
+        android:visibility="visible" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/inbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/msg_seller"
+        android:drawablePadding="11dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/inbox"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17"
+        android:visibility="visible" />
+
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/calender_seller_menu"
+        android:drawablePadding="11dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/calender"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17"
+        android:visibility="visible" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/noti_seller"
+        android:drawablePadding="13dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/notification"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/fav_seller"
+        android:drawablePadding="11dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/favorites"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"></View>
+
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/padding_dp10"
+        android:paddingRight="@dimen/padding_dp10"
+        android:paddingTop="@dimen/padding_dp10"
+        android:text="@string/selling"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp18" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/sales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/sales_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/sales"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/update_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/skils_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/update_services"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/provide_quotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/provide_quote_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/provide_quotes"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/job_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/my_jobs_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/my_jobs"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"></View>
+
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/padding_dp10"
+        android:paddingRight="@dimen/padding_dp10"
+        android:paddingTop="@dimen/padding_dp10"
+        android:text="@string/buying"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp18" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/my_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/wallet_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/my_transactions"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17"
+        android:visibility="visible" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/my_order_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/order"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/post_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/post_job_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/post_jobs"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"></View>
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/padding_dp10"
+        android:paddingRight="@dimen/padding_dp10"
+        android:paddingTop="@dimen/padding_dp10"
+        android:text="@string/general"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp18" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:drawableRight="@drawable/settings_seller"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_dp9"
+        android:text="@string/settings"
+        android:textColor="@color/colorGrayMenu"
+        android:textSize="@dimen/textsize_sp17" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"></View>
+</LinearLayout>

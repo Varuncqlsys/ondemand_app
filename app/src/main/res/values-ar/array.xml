@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="year_array">
+        <item>عام</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>شهر</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="currency_array">
+        <item>العملة (اختياري)</item>
+        <item>غير محدد</item>
+        <item>دولار أمريكي</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>سباكة</item>
+        <item>عامل الكهرباء</item>
+        <item>النجار</item>
+        <item> فني مكيف هواء</item>
+        <item>فني الأقمار الصناعية</item>
+        <item>دهان</item>
+    </string-array>
+
+    <string-array name="photo_array">
+        <item>الة تصوير</item>
+        <item>اختر من المعرض</item>
+        <item>إلغاء</item>
+    </string-array>
+
+
+      <string-array name="language_array">
+          <item>عربى</item>
+          <item>الإنجليزية</item>
+          <item>الأردية</item>
+      </string-array>
+
+    <!--<string-array name="language_array">
+        <item>Arabic</item>
+        <item>English</item>
+        <item>Urdu</item>
+    </string-array>-->
+
+    <string-array name="exp_array">
+        <item> &lt; 2 سنوات</item>
+        <item> 2-5 سنوات</item>
+        <item>&gt; 5 سنوات </item>
+    </string-array>
+
+    <string-array name="package_array">
+        <item>الأساسية</item>
+        <item>اساسي</item>
+        <item>علاوة</item>
+    </string-array>
+
+    <string-array name="audio_array">
+        <item>تسجيل صوتي</item>
+        <item>اختر من المعرض</item>
+        <item>إلغاء</item>
+    </string-array>
+
+    <string-array name="order_status_array">
+        <item>قيد الانتظار</item>
+        <item>لم يتم الدفع</item>
+        <item>مرفوضة</item>
+        <item>جاري التنفيذ</item>
+        <item>تمت الخدمة</item>
+        <item>مدفوع</item>
+        <item>في الطريق</item>
+        <item>تم الانتهاء من الخدمة</item>
+        <item>ألغيت</item>
+        <item>استرجاع</item>
+        <item>غير مكتمل</item>
+        <item>انتظار</item>
+        <item>بدأ رد الأموال</item>
+    </string-array>
+
+    <string-array name="order_type_array">
+        <item>طلب الآن</item>
+        <item>مجدول</item>
+        <item>استعراض الخدمة</item>
+    </string-array>
+
+    <string-array name="price_array">
+        <item>ر.س 0 - 10</item>
+        <item>ر.س 11 - 20</item>
+        <item>ر.س 21 - 30</item>
+        <item>فوق 30 ر.س</item>
+    </string-array>
+
+    <string-array name="language_level_array">
+        <item>اللغة الأم</item>
+        <item>الأساسية</item>
+        <item>بطلاقة</item>
+    </string-array>
+
+    <string-array name="seller_level_array">
+        <item>مبتدئ</item>
+        <item>متوسط</item>
+        <item>احترافي</item>
+    </string-array>
+
+    <string-array name="repeat_array">
+        <item>لا كرر</item>
+        <item>تكرار يوميا</item>
+        <item>تكرار أسبوعي</item>
+        <item>تكرار شهري</item>
+        <item>تكرار سنويا</item>
+    </string-array>
+
+    <string-array name="alert_array">
+        <item>لا يوجد تنبيه</item>
+        <item>في وقت الحدث</item>
+        <item> قبل 5 د </item>
+        <item> قبل 15 د </item>
+        <item> قبل 30 د </item>
+        <item> قبل 1 س </item>
+        <item> قبل 2 س </item>
+        <item>قبل يوم واحد</item>
+        <item>قبل 2 أيام</item>
+        <item>قبل أسبوع واحد</item>
+    </string-array>
+
+    <!--new array-->
+
+    <string-array name="degree_array">
+        <item>اللامتخرج من الجامعة</item>
+        <item>دراسات عليا</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_dp13"
+        android:text="@string/my_balance"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp20" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/title"
+        android:background="@color/divider_gray" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_dp10"
+        android:text=""
+        android:textColor="@color/colorAccentSeller"
+        android:textSize="@dimen/textsize_sp22" />
+
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_data"
+        android:textColor="@color/text_gray_color"
+        android:textSize="@dimen/textsize_sp20"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/total"
+        android:layout_marginBottom="@dimen/margin_dp5"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_dp8"
+        android:layout_marginTop="@dimen/margin_dp5"
+        android:orientation="horizontal">
+
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/refund_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_wallet_cancel"
+            android:gravity="center"
+            android:text="@string/view_refund"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp15" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/cancel_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_wallet_cancel"
+            android:gravity="center"
+            android:text="@string/view_cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp15" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

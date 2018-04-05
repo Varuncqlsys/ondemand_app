@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_dp5">
+
+    <ImageView
+        android:id="@+id/cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textsize_sp18" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/revenue"
+        android:visibility="gone"
+        android:layout_width="195dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_rectangle_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_dp2"
+        android:paddingRight="@dimen/padding_dp2"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp13" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_dp15"
+            android:src="@drawable/back_btn"
+            android:background="@drawable/primary_color_drawable"
+            android:id="@+id/back"
+            />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/terms"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp16" />
+    </RelativeLayout>
+
+
+    <com.omorni.custom_views.Normal_Text_View
+        android:id="@+id/terms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="left"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/term_text"
+        android:textColor="@color/text_gray_color"
+        android:textSize="16sp" />
+</LinearLayout>

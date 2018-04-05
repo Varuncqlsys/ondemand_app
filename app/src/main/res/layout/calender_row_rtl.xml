@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    app:dragEdge="left"
+    app:mode="same_level">
+
+
+    <FrameLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:background="#ffcc0000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/delete"
+            android:padding="@dimen/padding_dp10"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/delete_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrayMenu"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/textView_meeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="2dp"
+                android:paddingRight="@dimen/padding_dp5"
+                android:paddingTop="@dimen/padding_dp3"
+                android:text="@string/omorni_services"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp15" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/event_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="2dp"
+                android:paddingRight="@dimen/padding_dp10"
+                android:paddingTop="@dimen/padding_dp4"
+                android:text="Scheduled"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp12" />
+
+            <ImageView
+                android:id="@+id/imageView_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView_meeting"
+                android:layout_marginTop="7dp"
+                android:paddingRight="@dimen/padding_dp5"
+                android:src="@drawable/clock_wallet" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/textview_job_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_meeting"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/imageView_clock"
+                android:paddingRight="@dimen/padding_dp7"
+                android:text="8 - 10am"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp12" />
+
+
+            <ImageView
+                android:id="@+id/imageView_hay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_meeting"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@+id/textview_job_time"
+                android:paddingRight="@dimen/padding_dp8"
+                android:src="@drawable/location_wallet" />
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/textView_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_meeting"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/imageView_hay"
+                android:layout_toRightOf="@+id/event_type"
+                android:gravity="right"
+                android:paddingRight="@dimen/padding_dp10"
+                android:singleLine="true"
+                android:text="Hay Shuhada"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp12" />
+
+
+            <com.omorni.custom_views.Bold_Text_View
+                android:id="@+id/event_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/event_price"
+                android:paddingBottom="2dp"
+                android:paddingRight="@dimen/padding_dp10"
+                android:paddingTop="@dimen/padding_dp10"
+                android:text="Scheduled"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_sp14" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite" />
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

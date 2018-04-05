@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_declined_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omorni.activity.DeclinedJobActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_dp15"
+        android:layout_marginTop="@dimen/margin_dp10"
+        android:gravity="center_horizontal"
+        android:text="@string/time_respond_exceeded"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_sp18" />
+
+    <com.omorni.custom_views.Bold_Text_View
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_dp100"
+        android:background="@drawable/blue_request_drawable"
+        android:gravity="center"
+        android:text="@string/back_home"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.omorni.activity.TrackWorkActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/work_not_start_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/job_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_dp30"
+            android:text="@string/job_started"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp18" />
+
+        <ImageView
+            android:id="@+id/image_jobstarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_started"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_dp30"
+            android:src="@drawable/job_not_started" />
+
+        <com.omorni.custom_views.Bold_Text_View
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_jobstarted"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_dp10"
+            android:text="00:00:00"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_sp30" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

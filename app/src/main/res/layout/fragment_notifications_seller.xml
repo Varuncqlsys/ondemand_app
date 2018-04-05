@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omorni.fragment.NotificationsFragment">
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/as_seller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bg_color"
+            android:gravity="center"
+            android:text="@string/as_seller"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_sp17" />
+
+        <com.omorni.custom_views.Bold_Text_View
+            android:id="@+id/as_buyer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/as_buyer"
+            android:textColor="@color/colorBlueTextDark"
+            android:textSize="@dimen/textsize_sp17" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab"
+        android:background="@color/search_bg_color"
+        android:padding="@dimen/padding_dp10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/search_bg_white">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:iconifiedByDefault="false" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_layout"
+        android:visibility="gone">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_layout"
+            android:background="@color/colorWhite"
+            android:scrollbars="vertical"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_layout"
+        android:visibility="visible">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_layout"
+            android:background="@color/colorWhite"
+            android:scrollbars="vertical"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_data"
+        android:textColor="@color/red_error"
+        android:textSize="22sp"
+        android:visibility="gone"></TextView>
+</RelativeLayout>
